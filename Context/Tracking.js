@@ -228,6 +228,17 @@ export const TrackingProvuder = ({ children }) => {
             completeShipment,
             getShipment,
             startShipment,
+
+
+                DappName,
+                currentUser,
+                connectWallet,
+                createShipment,
+                getAllShipments,
+                getAllShipmentsCount,
+                completeShipment,
+                getShipment,
+                startShipment,
         }}
         >
             {children}
