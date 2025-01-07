@@ -4,7 +4,7 @@ import Web3Modal from "web3modal";
 
 //INTERNAL IMPORT
 
-import abi from "./abi.json";
+import tracking from "../Context/Tracking.json";
 
 const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 const ContractAbi = tracking.abi;
@@ -46,7 +46,7 @@ export const TrackingProvider = ({ children }) => {
         }
     };
 
-    const getAllShipments = async () => {
+    const getAllShipment = async () => {
         try {
             const provider = new ethers.providers.JsonRpcProvider();
             const contract = fetchContract(provider);
@@ -215,15 +215,14 @@ export const TrackingProvider = ({ children }) => {
         checkIfWalletConnected();
     }, []);
 
-    return
-    (
-        <TrackingContext.Provider
+    return (
+     <TrackingContext.Provider
             value={{
                 DappName,
                 currentUser,
                 connectWallet,
                 createShipment,
-                getAllShipments,
+                getAllShipment,
                 getAllShipmentsCount,
                 completeShipment,
                 getShipment,
@@ -232,5 +231,5 @@ export const TrackingProvider = ({ children }) => {
         >
             {children}
         </TrackingContext.Provider>
-    )
+    );
 };
