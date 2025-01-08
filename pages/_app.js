@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 
 //INTERNAL IMPORT
 
-import { TrackingProvider } from "../Context/Tracking";
+import { TrackingProvider } from "../Context/TrackingContext";
 import { NavBar, Footer } from "../Components";
 
 export default function App({ Component, pageProps }) {

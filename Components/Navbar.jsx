@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useContext, use } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
-import { TrackingContext } from "../Context/Tracking";
+import { TrackingContext } from "../Context/TrackingContext";
 import { Nav1, Nav2, Nav3 } from "../Components/index";
  
 export default () => {
   const [state, setState] = useState(false);
-  const [currentUser, connectWallet] = useState("TrackingContext");
+  const { currentUser, connectWallet } = useContext(TrackingContext);
 
   const navigation = [
     { title: "Home", path: "#" },
