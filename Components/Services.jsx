@@ -1,11 +1,11 @@
-import React from 'react'
+import images from "../Images/index";
+import image from "../next/image";
 
-const Service = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+export default ({
+   setOpenProfile,
+   setCompleteModel,
+   setGetModel,
+   setStartModel
+}) => {
+
 }
-
-export default Service
