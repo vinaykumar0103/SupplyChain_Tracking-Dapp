@@ -5,9 +5,7 @@ export default ({
    setOpenProfile,
    setCompleteModel,
    setGetModel,
-   setStartModel
+   setStartModel,
 }) => {
-   const service = ()=> {
-      
-   }
+   
 }
