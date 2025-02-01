@@ -1,5 +1,5 @@
 import images from "../Images/index";
-import image from "../next/image";
+import Image from "/next/image";
 
 export default ({
    setOpenProfile,
@@ -7,5 +7,19 @@ export default ({
    setGetModel,
    setStartModel,
 }) => {
+
+   const team = [
+      {
+         avatar : images.compShipment,
+      },
+
+      {
+         avatar : images.getShipment,
+      },
+
+      {
+         avatar : images.startShipment
+      }
+   ]
    
 }
